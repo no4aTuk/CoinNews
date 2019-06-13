@@ -1,0 +1,10 @@
+Pods
+AFNetworkLayer/Pods
+*.xcbkptlist
+AFNetworkLayer/AFNetworkLayer.xcworkspace/xcshareddata
+AFNetworkLayer/AFNetworkLayer.xcodeproj/project.xcworkspace/xcshareddata
+CoinNews.xcworkspace/xcshareddata
+AFNetworkLayer/AFNetworkLayer.xcodeproj/project.xcworkspace
+AFNetworkLayer/AFNetworkLayer.xcodeproj/xcuserdata/itsmuffintime.xcuserdatad/xcschemes
+AFNetworkLayer/AFNetworkLayer.xcworkspace
+CoinNews.xcworkspace

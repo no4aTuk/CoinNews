@@ -7,14 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2ABA020BB8BA0B308DDAD093 /* Pods_CoinNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B886195FF5E75BBCA7CCF4A /* Pods_CoinNews.framework */; };
 		67E6BB8122B2B2B900EB2426 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6BB8022B2B2B900EB2426 /* AppDelegate.swift */; };
 		67E6BB8322B2B2B900EB2426 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6BB8222B2B2B900EB2426 /* ViewController.swift */; };
 		67E6BB8622B2B2B900EB2426 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67E6BB8422B2B2B900EB2426 /* Main.storyboard */; };
 		67E6BB8822B2B2B900EB2426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67E6BB8722B2B2B900EB2426 /* Assets.xcassets */; };
 		67E6BB8B22B2B2B900EB2426 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67E6BB8922B2B2B900EB2426 /* LaunchScreen.storyboard */; };
+		67E6BB9622B2B44700EB2426 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6BB9522B2B44700EB2426 /* PostService.swift */; };
+		67E6BB9822B2B46100EB2426 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6BB9722B2B46100EB2426 /* Post.swift */; };
+		67E6BB9B22B2B48100EB2426 /* PostsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6BB9A22B2B48100EB2426 /* PostsRouter.swift */; };
+		67E6BB9F22B2B5AA00EB2426 /* CoinsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6BB9E22B2B5AA00EB2426 /* CoinsListCoordinator.swift */; };
+		67E6BBA122B2B5B600EB2426 /* CoinsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6BBA022B2B5B600EB2426 /* CoinsListViewController.swift */; };
+		67E6BBA322B2B5C200EB2426 /* CoinsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6BBA222B2B5C200EB2426 /* CoinsListViewModel.swift */; };
+		67E6BBA622B2B5F000EB2426 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6BBA522B2B5F000EB2426 /* BaseViewController.swift */; };
+		67E6BBA822B2B5FC00EB2426 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6BBA722B2B5FC00EB2426 /* BaseViewModel.swift */; };
+		67E6BBAA22B2B60D00EB2426 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6BBA922B2B60D00EB2426 /* BaseCoordinator.swift */; };
+		67E6BBAE22B2B74C00EB2426 /* UIViewController+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6BBAD22B2B74C00EB2426 /* UIViewController+Init.swift */; };
+		67E6BBB022B2B7E900EB2426 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6BBAF22B2B7E900EB2426 /* AppError.swift */; };
+		67E6BBB222B2B97B00EB2426 /* CoinsListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6BBB122B2B97B00EB2426 /* CoinsListService.swift */; };
+		67E6BBB422B2B98500EB2426 /* CoinsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6BBB322B2B98500EB2426 /* CoinsListRouter.swift */; };
+		67E6BBB622B2B9CE00EB2426 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6BBB522B2B9CE00EB2426 /* Coin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33C3BFFB90F1A47B367FA829 /* Pods-CoinNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinNews/Pods-CoinNews.debug.xcconfig"; sourceTree = "<group>"; };
 		67E6BB7D22B2B2B900EB2426 /* CoinNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67E6BB8022B2B2B900EB2426 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67E6BB8222B2B2B900EB2426 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +38,23 @@
 		67E6BB8722B2B2B900EB2426 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67E6BB8A22B2B2B900EB2426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67E6BB8C22B2B2B900EB2426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67E6BB9522B2B44700EB2426 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		67E6BB9722B2B46100EB2426 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		67E6BB9A22B2B48100EB2426 /* PostsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRouter.swift; sourceTree = "<group>"; };
+		67E6BB9C22B2B52E00EB2426 /* CointNews-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CointNews-Bridging-Header.h"; sourceTree = "<group>"; };
+		67E6BB9E22B2B5AA00EB2426 /* CoinsListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsListCoordinator.swift; sourceTree = "<group>"; };
+		67E6BBA022B2B5B600EB2426 /* CoinsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsListViewController.swift; sourceTree = "<group>"; };
+		67E6BBA222B2B5C200EB2426 /* CoinsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsListViewModel.swift; sourceTree = "<group>"; };
+		67E6BBA522B2B5F000EB2426 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		67E6BBA722B2B5FC00EB2426 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		67E6BBA922B2B60D00EB2426 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		67E6BBAD22B2B74C00EB2426 /* UIViewController+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Init.swift"; sourceTree = "<group>"; };
+		67E6BBAF22B2B7E900EB2426 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		67E6BBB122B2B97B00EB2426 /* CoinsListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsListService.swift; sourceTree = "<group>"; };
+		67E6BBB322B2B98500EB2426 /* CoinsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsListRouter.swift; sourceTree = "<group>"; };
+		67E6BBB522B2B9CE00EB2426 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		9B886195FF5E75BBCA7CCF4A /* Pods_CoinNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C886FA9014F01E3F991BADA1 /* Pods-CoinNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinNews/Pods-CoinNews.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABA020BB8BA0B308DDAD093 /* Pods_CoinNews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +74,8 @@
 			children = (
 				67E6BB7F22B2B2B900EB2426 /* CoinNews */,
 				67E6BB7E22B2B2B900EB2426 /* Products */,
+				D1B22F499DB882407BB67742 /* Pods */,
+				A617B36A4B01CF0CDF1BF905 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +92,108 @@
 			children = (
 				67E6BB8022B2B2B900EB2426 /* AppDelegate.swift */,
 				67E6BB8222B2B2B900EB2426 /* ViewController.swift */,
+				67E6BBA422B2B5E200EB2426 /* Base */,
+				67E6BB9D22B2B59800EB2426 /* CoinsList */,
 				67E6BB8422B2B2B900EB2426 /* Main.storyboard */,
+				67E6BBAB22B2B68300EB2426 /* Helpers */,
+				67E6BB9422B2B42200EB2426 /* Models */,
+				67E6BB9222B2B41300EB2426 /* Network */,
 				67E6BB8722B2B2B900EB2426 /* Assets.xcassets */,
 				67E6BB8922B2B2B900EB2426 /* LaunchScreen.storyboard */,
 				67E6BB8C22B2B2B900EB2426 /* Info.plist */,
+				67E6BB9C22B2B52E00EB2426 /* CointNews-Bridging-Header.h */,
 			);
 			path = CoinNews;
+			sourceTree = "<group>";
+		};
+		67E6BB9222B2B41300EB2426 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				67E6BB9922B2B47B00EB2426 /* Routers */,
+				67E6BB9322B2B41C00EB2426 /* Services */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		67E6BB9322B2B41C00EB2426 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				67E6BBB122B2B97B00EB2426 /* CoinsListService.swift */,
+				67E6BB9522B2B44700EB2426 /* PostService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		67E6BB9422B2B42200EB2426 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				67E6BB9722B2B46100EB2426 /* Post.swift */,
+				67E6BBB522B2B9CE00EB2426 /* Coin.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		67E6BB9922B2B47B00EB2426 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				67E6BB9A22B2B48100EB2426 /* PostsRouter.swift */,
+				67E6BBB322B2B98500EB2426 /* CoinsListRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		67E6BB9D22B2B59800EB2426 /* CoinsList */ = {
+			isa = PBXGroup;
+			children = (
+				67E6BB9E22B2B5AA00EB2426 /* CoinsListCoordinator.swift */,
+				67E6BBA022B2B5B600EB2426 /* CoinsListViewController.swift */,
+				67E6BBA222B2B5C200EB2426 /* CoinsListViewModel.swift */,
+			);
+			path = CoinsList;
+			sourceTree = "<group>";
+		};
+		67E6BBA422B2B5E200EB2426 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				67E6BBA522B2B5F000EB2426 /* BaseViewController.swift */,
+				67E6BBA722B2B5FC00EB2426 /* BaseViewModel.swift */,
+				67E6BBA922B2B60D00EB2426 /* BaseCoordinator.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		67E6BBAB22B2B68300EB2426 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				67E6BBAC22B2B74100EB2426 /* Extenstions */,
+				67E6BBAF22B2B7E900EB2426 /* AppError.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		67E6BBAC22B2B74100EB2426 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				67E6BBAD22B2B74C00EB2426 /* UIViewController+Init.swift */,
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		A617B36A4B01CF0CDF1BF905 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B886195FF5E75BBCA7CCF4A /* Pods_CoinNews.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1B22F499DB882407BB67742 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33C3BFFB90F1A47B367FA829 /* Pods-CoinNews.debug.xcconfig */,
+				C886FA9014F01E3F991BADA1 /* Pods-CoinNews.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +203,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67E6BB8F22B2B2B900EB2426 /* Build configuration list for PBXNativeTarget "CoinNews" */;
 			buildPhases = (
+				141F9ED346DA663866620B92 /* [CP] Check Pods Manifest.lock */,
 				67E6BB7922B2B2B900EB2426 /* Sources */,
 				67E6BB7A22B2B2B900EB2426 /* Frameworks */,
 				67E6BB7B22B2B2B900EB2426 /* Resources */,
+				424E244B064C704568565D23 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +264,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		141F9ED346DA663866620B92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoinNews-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		424E244B064C704568565D23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CoinNews/Pods-CoinNews-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworkLayer/AFNetworkLayer.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworkLayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoinNews/Pods-CoinNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		67E6BB7922B2B2B900EB2426 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67E6BBA122B2B5B600EB2426 /* CoinsListViewController.swift in Sources */,
+				67E6BBB422B2B98500EB2426 /* CoinsListRouter.swift in Sources */,
+				67E6BBA822B2B5FC00EB2426 /* BaseViewModel.swift in Sources */,
+				67E6BBAE22B2B74C00EB2426 /* UIViewController+Init.swift in Sources */,
 				67E6BB8322B2B2B900EB2426 /* ViewController.swift in Sources */,
+				67E6BBB022B2B7E900EB2426 /* AppError.swift in Sources */,
+				67E6BB9622B2B44700EB2426 /* PostService.swift in Sources */,
+				67E6BB9B22B2B48100EB2426 /* PostsRouter.swift in Sources */,
 				67E6BB8122B2B2B900EB2426 /* AppDelegate.swift in Sources */,
+				67E6BBA622B2B5F000EB2426 /* BaseViewController.swift in Sources */,
+				67E6BB9822B2B46100EB2426 /* Post.swift in Sources */,
+				67E6BB9F22B2B5AA00EB2426 /* CoinsListCoordinator.swift in Sources */,
+				67E6BBAA22B2B60D00EB2426 /* BaseCoordinator.swift in Sources */,
+				67E6BBB222B2B97B00EB2426 /* CoinsListService.swift in Sources */,
+				67E6BBB622B2B9CE00EB2426 /* Coin.swift in Sources */,
+				67E6BBA322B2B5C200EB2426 /* CoinsListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +481,7 @@
 		};
 		67E6BB9022B2B2B900EB2426 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33C3BFFB90F1A47B367FA829 /* Pods-CoinNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +493,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = itsmuffintime.CoinNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoinNews/CointNews-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,6 +501,7 @@
 		};
 		67E6BB9122B2B2B900EB2426 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C886FA9014F01E3F991BADA1 /* Pods-CoinNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,6 +513,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = itsmuffintime.CoinNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoinNews/CointNews-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
