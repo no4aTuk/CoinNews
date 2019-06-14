@@ -7,5 +7,5 @@ target 'CoinNews' do
 
   # Pods for CoinNews
   pod 'AFNetworkLayer', :path => 'AFNetworkLayer'
-
+  pod 'SnapKit', '~> 4.2.0'
 end

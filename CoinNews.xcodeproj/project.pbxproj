@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1870A7BE22B3726600F7455C /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1870A7BD22B3726600F7455C /* RootCoordinator.swift */; };
+		1870A7C222B3745100F7455C /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1870A7C122B3745100F7455C /* ChartViewController.swift */; };
+		1870A7C422B3747B00F7455C /* ChartCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1870A7C322B3747B00F7455C /* ChartCoordinator.swift */; };
+		1870A7C622B3749100F7455C /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1870A7C522B3749100F7455C /* ChartViewModel.swift */; };
+		1870A7C822B375CD00F7455C /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1870A7C722B375CD00F7455C /* NewsViewController.swift */; };
+		1870A7CA22B375DE00F7455C /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1870A7C922B375DE00F7455C /* NewsViewModel.swift */; };
+		1870A7CC22B375F500F7455C /* NewsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1870A7CB22B375F500F7455C /* NewsCoordinator.swift */; };
 		2ABA020BB8BA0B308DDAD093 /* Pods_CoinNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B886195FF5E75BBCA7CCF4A /* Pods_CoinNews.framework */; };
 		67E6BB8122B2B2B900EB2426 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6BB8022B2B2B900EB2426 /* AppDelegate.swift */; };
 		67E6BB8322B2B2B900EB2426 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6BB8222B2B2B900EB2426 /* ViewController.swift */; };
@@ -30,6 +37,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1870A7BD22B3726600F7455C /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		1870A7C122B3745100F7455C /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		1870A7C322B3747B00F7455C /* ChartCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCoordinator.swift; sourceTree = "<group>"; };
+		1870A7C522B3749100F7455C /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
+		1870A7C722B375CD00F7455C /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		1870A7C922B375DE00F7455C /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		1870A7CB22B375F500F7455C /* NewsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCoordinator.swift; sourceTree = "<group>"; };
 		33C3BFFB90F1A47B367FA829 /* Pods-CoinNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinNews/Pods-CoinNews.debug.xcconfig"; sourceTree = "<group>"; };
 		67E6BB7D22B2B2B900EB2426 /* CoinNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67E6BB8022B2B2B900EB2426 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +83,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1870A7BF22B3743E00F7455C /* News */ = {
+			isa = PBXGroup;
+			children = (
+				1870A7C722B375CD00F7455C /* NewsViewController.swift */,
+				1870A7C922B375DE00F7455C /* NewsViewModel.swift */,
+				1870A7CB22B375F500F7455C /* NewsCoordinator.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		1870A7C022B3744600F7455C /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				1870A7C122B3745100F7455C /* ChartViewController.swift */,
+				1870A7C322B3747B00F7455C /* ChartCoordinator.swift */,
+				1870A7C522B3749100F7455C /* ChartViewModel.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
 		67E6BB7422B2B2B900EB2426 = {
 			isa = PBXGroup;
 			children = (
@@ -92,7 +126,10 @@
 			children = (
 				67E6BB8022B2B2B900EB2426 /* AppDelegate.swift */,
 				67E6BB8222B2B2B900EB2426 /* ViewController.swift */,
+				1870A7C022B3744600F7455C /* Charts */,
+				1870A7BF22B3743E00F7455C /* News */,
 				67E6BBA422B2B5E200EB2426 /* Base */,
+				1870A7BD22B3726600F7455C /* RootCoordinator.swift */,
 				67E6BB9D22B2B59800EB2426 /* CoinsList */,
 				67E6BB8422B2B2B900EB2426 /* Main.storyboard */,
 				67E6BBAB22B2B68300EB2426 /* Helpers */,
@@ -295,11 +332,12 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CoinNews/Pods-CoinNews-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-CoinNews/Pods-CoinNews-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworkLayer/AFNetworkLayer.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -309,10 +347,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoinNews/Pods-CoinNews-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoinNews/Pods-CoinNews-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -326,18 +365,25 @@
 				67E6BBB422B2B98500EB2426 /* CoinsListRouter.swift in Sources */,
 				67E6BBA822B2B5FC00EB2426 /* BaseViewModel.swift in Sources */,
 				67E6BBAE22B2B74C00EB2426 /* UIViewController+Init.swift in Sources */,
+				1870A7C422B3747B00F7455C /* ChartCoordinator.swift in Sources */,
+				1870A7C622B3749100F7455C /* ChartViewModel.swift in Sources */,
 				67E6BB8322B2B2B900EB2426 /* ViewController.swift in Sources */,
+				1870A7C222B3745100F7455C /* ChartViewController.swift in Sources */,
 				67E6BBB022B2B7E900EB2426 /* AppError.swift in Sources */,
 				67E6BB9622B2B44700EB2426 /* PostService.swift in Sources */,
 				67E6BB9B22B2B48100EB2426 /* PostsRouter.swift in Sources */,
 				67E6BB8122B2B2B900EB2426 /* AppDelegate.swift in Sources */,
 				67E6BBA622B2B5F000EB2426 /* BaseViewController.swift in Sources */,
+				1870A7BE22B3726600F7455C /* RootCoordinator.swift in Sources */,
 				67E6BB9822B2B46100EB2426 /* Post.swift in Sources */,
 				67E6BB9F22B2B5AA00EB2426 /* CoinsListCoordinator.swift in Sources */,
 				67E6BBAA22B2B60D00EB2426 /* BaseCoordinator.swift in Sources */,
+				1870A7CA22B375DE00F7455C /* NewsViewModel.swift in Sources */,
 				67E6BBB222B2B97B00EB2426 /* CoinsListService.swift in Sources */,
+				1870A7C822B375CD00F7455C /* NewsViewController.swift in Sources */,
 				67E6BBB622B2B9CE00EB2426 /* Coin.swift in Sources */,
 				67E6BBA322B2B5C200EB2426 /* CoinsListViewModel.swift in Sources */,
+				1870A7CC22B375F500F7455C /* NewsCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

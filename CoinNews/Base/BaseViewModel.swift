@@ -7,7 +7,8 @@
 //
 
 import Foundation
+import RxSwift
 
 class BaseViewModel {
-    
+    var bag = DisposeBag()
 }

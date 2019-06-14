@@ -49,7 +49,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func startInitialScreen() {
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        CoinsListCoordinator.init().show(in: self.window!)
+        //CoinsListCoordinator.init().show(in: self.window!)
+        RootCoordintor.init().start(in: self.window!)
     }
 }
 

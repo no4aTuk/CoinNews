@@ -18,4 +18,12 @@ class CoinsListCoordinator: BaseCoordinator {
         window.makeKeyAndVisible()
         window.rootViewController = navCtrl
     }
+    
+    func getInstance() -> CoinsListViewController {
+        let service = CoinsListService()
+        let viewModel = CoinsListViewModel(coinListService: service)
+        let ctrl = CoinsListViewController(viewModel: viewModel)
+        ctrl.title = "Coins"
+        return ctrl
+    }
 }
