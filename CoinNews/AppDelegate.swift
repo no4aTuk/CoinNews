@@ -13,14 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    //var apiClient: ApiClient!
-    
     var shared: AppDelegate {
         return UIApplication.shared.delegate as! AppDelegate
     }
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        setupGlobalAppearance()
         startInitialScreen()
         return true
     }
@@ -46,11 +44,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+}
+
+//MRAK: Private func
+private extension AppDelegate {
+    private func setupGlobalAppearance() {
+        // nav bar
+        let font = UIFont.appFont(.bold, size: 16.0)
+        UINavigationBar.appearance().barTintColor = AppConstants.Colors.white //bar background
+        UINavigationBar.appearance().tintColor = AppConstants.Colors.green //same as foregroundColor for backButton
+        UINavigationBar.appearance().backIndicatorImage = AppImages.back
+        UINavigationBar.appearance().backIndicatorTransitionMaskImage = AppImages.backTransition
+        
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font : font,
+                                                             NSAttributedString.Key.foregroundColor: AppConstants.Colors.mainBlack!],
+                                                            for: UIControl.State.normal) //back button font
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font : font,
+                                                             NSAttributedString.Key.foregroundColor: AppConstants.Colors.mainBlack!],
+                                                            for: UIControl.State.selected)
+        UINavigationBar.appearance().titleTextAttributes =
+            [NSAttributedString.Key.font: font,
+             NSAttributedString.Key.foregroundColor : AppConstants.Colors.mainBlack!] //bar title font and color
+        
+        let tabItemFont = UIFont.appFont(.regular, size: 10)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: tabItemFont], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: tabItemFont], for: .selected)
+    }
     
     private func startInitialScreen() {
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        //CoinsListCoordinator.init().show(in: self.window!)
-        RootCoordintor.init().start(in: self.window!)
+        RootCoordinator.init().start(in: self.window!)
     }
 }
 

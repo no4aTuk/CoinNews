@@ -13,12 +13,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Some ctrl"
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(back))
+    }
+    
+    @objc private func back() {
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func loadView() {
         super.loadView()
-        self.view.backgroundColor = UIColor.lightGray
-        self.view.frame = UIScreen.main.bounds
+        self.view.backgroundColor = .white
     }
 }
 

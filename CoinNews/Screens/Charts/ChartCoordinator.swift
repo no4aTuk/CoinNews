@@ -11,7 +11,7 @@ import Foundation
 final class ChartCoordinator: BaseCoordinator {
     func getInstance() -> ChartViewController {
         let ctrl = ChartViewController(viewModel: ChartViewModel())
-        ctrl.title = "Charts"
+        ctrl.title = AppText.chart_tab
         return ctrl
     }
 }

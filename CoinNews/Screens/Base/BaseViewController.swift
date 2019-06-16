@@ -7,10 +7,12 @@
 //
 
 import Foundation
+import RxSwift
 
 class BaseViewController<T: BaseViewModel>: UIViewController {
     
     var viewModel: T!
+    var bag = DisposeBag()
     
     required init(viewModel: T) {
         self.viewModel = viewModel
@@ -20,6 +22,8 @@ class BaseViewController<T: BaseViewModel>: UIViewController {
     override func loadView() {
         super.loadView()
         self.view.backgroundColor = .white
+        //This will remove text on back btn
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {

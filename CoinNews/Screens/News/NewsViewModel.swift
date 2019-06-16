@@ -12,15 +12,13 @@ import RxSwift
 final class NewsViewModel: BaseViewModel {
     let buttonTapObservable = PublishSubject<Void>()
     
-    let goNextObservable: ObserverType!
-    
+    let goNextObservable = PublishSubject<Void>()
     
     override init() {
-        goNextObservable = buttonTapObservable.asObserver()
         super.init()
-        let goNextObservable = buttonTapObservable.asObservable()
-        buttonTapObservable.subscribe(onNext: { _ in
-           
+        
+        buttonTapObservable.subscribe({ _ in
+            self.goNextObservable.onNext(())
         }).disposed(by: bag)
     }
 }

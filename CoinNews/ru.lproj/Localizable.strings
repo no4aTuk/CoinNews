@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  CoinNews
+
+  Created by Vonny on 16/06/2019.
+  Copyright © 2019 Vonny. All rights reserved.
+*/
+
+
+coins_tab = "Токены";
+news_tab = "Новости";
+chart_tab = "График";
