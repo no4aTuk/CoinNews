@@ -13,9 +13,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    var shared: AppDelegate {
+    static var shared: AppDelegate {
         return UIApplication.shared.delegate as! AppDelegate
     }
+    
+    var isLoggedIn: Bool = false
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         setupGlobalAppearance()

@@ -22,4 +22,20 @@ class BaseCoordinator {
         }
         rootVC.navigationController?.present(viewController, animated: true, completion: nil)
     }
+    
+    public func showRootAnimated(controller: UIViewController, in window: UIWindow) {
+        let snapshot:UIView = (window.snapshotView(afterScreenUpdates: true))!
+        controller.view.addSubview(snapshot)
+        
+        window.rootViewController = controller
+        window.makeKeyAndVisible()
+        
+        UIView.animate(withDuration: 0.5, animations: {() in
+            snapshot.layer.opacity = 0
+            snapshot.layer.transform = CATransform3DMakeScale(1.5, 1.5, 1.5)
+        }, completion: {
+            (value: Bool) in
+            snapshot.removeFromSuperview()
+        })
+    }
 }

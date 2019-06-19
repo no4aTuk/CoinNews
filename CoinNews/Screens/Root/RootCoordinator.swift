@@ -42,9 +42,13 @@ class RootCoordinator: BaseCoordinator {
     }()
     
     func start(in window: UIWindow) {
+        print("start root coord")
         window.frame = UIScreen.main.bounds
-        window.rootViewController = rootCtrl
-        window.makeKeyAndVisible()
+        if AppDelegate.shared.isLoggedIn {
+            showRootAnimated(controller: rootCtrl, in: window)
+        } else {
+            LoginCoordinator.init().start(in: window)
+        }
     }
     
     func doSomething() {

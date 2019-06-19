@@ -13,13 +13,14 @@ final class NewsCoordinator: BaseCoordinator {
         let vm = NewsViewModel()
         let ctrl = NewsViewController(viewModel: vm)
         vm.goNextObservable.subscribe(onNext: { _ in
-            let newCtrl = ViewController()
+            //let newCtrl = ViewController()
             //self.push(newCtrl, rootVC: ctrl)
-            self.present(newCtrl, rootVC: ctrl)
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
-                let new = ViewController()
-                self.push(new, rootVC: newCtrl)
-            })
+            //self.present(newCtrl, rootVC: ctrl)
+            //DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
+            //    let new = ViewController()
+            //    self.push(new, rootVC: newCtrl)
+            //})
+            LoginCoordinator.init().start(in: AppDelegate.shared.window!)
         }).disposed(by: ctrl.bag)
         ctrl.title = AppText.news_tab
         return ctrl

@@ -15,6 +15,9 @@
 		1870A7CA22B375DE00F7455C /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1870A7C922B375DE00F7455C /* NewsViewModel.swift */; };
 		1870A7CC22B375F500F7455C /* NewsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1870A7CB22B375F500F7455C /* NewsCoordinator.swift */; };
 		2ABA020BB8BA0B308DDAD093 /* Pods_CoinNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B886195FF5E75BBCA7CCF4A /* Pods_CoinNews.framework */; };
+		67C047CF22BAA32E00CC12F2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C047CE22BAA32E00CC12F2 /* LoginViewController.swift */; };
+		67C047D122BAA35400CC12F2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C047D022BAA35400CC12F2 /* LoginViewModel.swift */; };
+		67C047D322BAA35C00CC12F2 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C047D222BAA35C00CC12F2 /* LoginCoordinator.swift */; };
 		67E6070622B66DE600300BC0 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6070522B66DE600300BC0 /* UIColor+Hex.swift */; };
 		67E6070822B66E8000300BC0 /* AppContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6070722B66E8000300BC0 /* AppContants.swift */; };
 		67E6070A22B68B8100300BC0 /* UIFont+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6070922B68B8100300BC0 /* UIFont+Custom.swift */; };
@@ -51,6 +54,9 @@
 		1870A7C922B375DE00F7455C /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		1870A7CB22B375F500F7455C /* NewsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCoordinator.swift; sourceTree = "<group>"; };
 		33C3BFFB90F1A47B367FA829 /* Pods-CoinNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinNews/Pods-CoinNews.debug.xcconfig"; sourceTree = "<group>"; };
+		67C047CE22BAA32E00CC12F2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		67C047D022BAA35400CC12F2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		67C047D222BAA35C00CC12F2 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		67E6070522B66DE600300BC0 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		67E6070722B66E8000300BC0 /* AppContants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContants.swift; sourceTree = "<group>"; };
 		67E6070922B68B8100300BC0 /* UIFont+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Custom.swift"; sourceTree = "<group>"; };
@@ -118,6 +124,16 @@
 			path = Charts;
 			sourceTree = "<group>";
 		};
+		67C047CD22BAA32600CC12F2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				67C047CE22BAA32E00CC12F2 /* LoginViewController.swift */,
+				67C047D022BAA35400CC12F2 /* LoginViewModel.swift */,
+				67C047D222BAA35C00CC12F2 /* LoginCoordinator.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		67E6070B22B6946400300BC0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +167,7 @@
 			children = (
 				67E6BBA422B2B5E200EB2426 /* Base */,
 				67E6071B22B69C3500300BC0 /* Root */,
+				67C047CD22BAA32600CC12F2 /* Login */,
 				1870A7C022B3744600F7455C /* Charts */,
 				67E6BB9D22B2B59800EB2426 /* CoinsList */,
 				1870A7BF22B3743E00F7455C /* News */,
@@ -421,14 +438,17 @@
 				67E6BBA822B2B5FC00EB2426 /* BaseViewModel.swift in Sources */,
 				67E6BBAE22B2B74C00EB2426 /* UIViewController+Init.swift in Sources */,
 				1870A7C422B3747B00F7455C /* ChartCoordinator.swift in Sources */,
+				67C047CF22BAA32E00CC12F2 /* LoginViewController.swift in Sources */,
 				1870A7C622B3749100F7455C /* ChartViewModel.swift in Sources */,
 				67E6BB8322B2B2B900EB2426 /* ViewController.swift in Sources */,
+				67C047D122BAA35400CC12F2 /* LoginViewModel.swift in Sources */,
 				1870A7C222B3745100F7455C /* ChartViewController.swift in Sources */,
 				67E6BBB022B2B7E900EB2426 /* AppError.swift in Sources */,
 				67E6071322B695EA00300BC0 /* AppImages.swift in Sources */,
 				67E6BB9622B2B44700EB2426 /* PostService.swift in Sources */,
 				67E6BB9B22B2B48100EB2426 /* PostsRouter.swift in Sources */,
 				67E6BB8122B2B2B900EB2426 /* AppDelegate.swift in Sources */,
+				67C047D322BAA35C00CC12F2 /* LoginCoordinator.swift in Sources */,
 				67E6BBA622B2B5F000EB2426 /* BaseViewController.swift in Sources */,
 				67E6070A22B68B8100300BC0 /* UIFont+Custom.swift in Sources */,
 				67E6070622B66DE600300BC0 /* UIColor+Hex.swift in Sources */,
