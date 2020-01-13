@@ -10,3 +10,4 @@
 coins_tab = "Coins";
 news_tab = "News";
 chart_tab = "Chart";
+favorites_only = "Favorites only"; //test

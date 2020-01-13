@@ -14,5 +14,4 @@ struct AppImages {
     static let coinsTab = UIImage(named: "coins_tab")
     static let newsTab = UIImage(named: "news_tab")
     static let chartsTab = UIImage(named: "charts_tab")
-    
 }

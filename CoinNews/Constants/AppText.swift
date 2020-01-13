@@ -20,4 +20,5 @@ struct AppText {
     static let coins_tab = "coins_tab".localized()
     static let news_tab = "news_tab".localized()
     static let chart_tab = "chart_tab".localized()
+    static let favorites_only = "favorites_only".localized()
 }
