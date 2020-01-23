@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension UIViewController {
     static func getInstance<T: UIViewController>(fromStoryboard storyboard: String, bundle: Bundle = Bundle.main) throws -> T {

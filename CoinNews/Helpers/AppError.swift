@@ -9,16 +9,20 @@
 import Foundation
 
 enum AppError: Error {
-    case controllerNotFound(ctrl: String)
-    
-    var localizedDescription: String {
-        get {
-            switch self {
-            case .controllerNotFound(let vc):
-                return "\(vc) type can not be instantiated!"
-            default:
-                return self.localizedDescription
-            }
-        }
+  case controllerNotFound(ctrl: String)
+  case cacheFolderNotFound
+  
+  
+  var localizedDescription: String {
+    get {
+      switch self {
+      case .controllerNotFound(let vc):
+        return "\(vc) type can not be instantiated!"
+      case .cacheFolderNotFound:
+        return "cache folder not found"
+      default:
+        return self.localizedDescription
+      }
     }
+  }
 }

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension RawRepresentable where Self.RawValue == UIColor {
     

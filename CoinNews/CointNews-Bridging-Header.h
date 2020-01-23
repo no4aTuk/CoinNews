@@ -9,6 +9,7 @@
 #ifndef CointNews_Bridging_Header_h
 #define CointNews_Bridging_Header_h
 
-#import <AFNetworkLayer/AFNetworkLayer.h>
+//TODO uncomment when needed pods
+//#import <AFNetworkLayer/AFNetworkLayer.h>
 
 #endif /* CointNews_Bridging_Header_h */

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct AppImages {
     static let back = UIImage(named: "back_normal")

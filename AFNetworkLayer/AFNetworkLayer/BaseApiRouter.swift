@@ -22,7 +22,7 @@ public extension BaseApiRouter {
         return ApiConstants.baseUrl
     }
     
-    public func asURLRequest() throws -> URLRequest {
+    func asURLRequest() throws -> URLRequest {
         let url = try baseURL.asURL()
 
         var urlRequest = URLRequest(url: url.appendingPathComponent(path))
