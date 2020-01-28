@@ -8,6 +8,10 @@
 
 import Foundation
 
+enum Loh: String {
+  case log = "asdasdsa"
+}
+
 enum CoinsRouter: BaseRouter {
   
   static let baseURL = URL(string: "https://api.coingecko.com/api/v3")!
@@ -17,7 +21,7 @@ enum CoinsRouter: BaseRouter {
   var path: String {
     switch self {
     case .coinsMarkets:
-      return Self.baseURL.appendingPathComponent("coins/markets").absoluteString
+      return "coins/markets"
     }
   }
   

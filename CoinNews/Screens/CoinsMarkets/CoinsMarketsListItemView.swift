@@ -13,7 +13,6 @@ struct CoinsMarketsListItemView: View {
   
   var body: some View {
     HStack {
-      //Image("coins_tab")
       URLImage(url: coin.image)
         .frame(width: 50, height: 50)
       VStack(alignment: .leading) {

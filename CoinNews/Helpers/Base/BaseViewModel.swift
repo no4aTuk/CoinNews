@@ -10,6 +10,7 @@ import Foundation
 import Combine
 
 public class BaseViewModel: ObservableObject {
+  @Published var loading: Bool = false
   @Published var error: ApiError? = nil
   
   var subscriptions = Set<AnyCancellable>()

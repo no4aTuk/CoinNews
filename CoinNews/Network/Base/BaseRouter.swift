@@ -8,17 +8,21 @@
 
 import Foundation
 
-public protocol BaseRouter {
+public protocol BaseRouter: EndPoint {
   var path: String {get}
   var method: HttpMethod {get}
   var parameters: JSONParameters {get}
 }
 
 extension BaseRouter {
+  var baseURL: URL {
+    URL(string: "https://api.coingecko.com/api/v3")!
+  }
+}
+
+extension BaseRouter {
   func asUrlRequest() throws -> URLRequest {
-    guard let url = URL(string: path) else {
-      throw ApiError.invalidBaseUrl
-    }
+    let url = baseURL.appendingPathComponent(path)
     
     var urlRequest = URLRequest(url: url)
     urlRequest.httpMethod = self.method.rawValue

@@ -18,12 +18,10 @@ class CoinsMarketsViewModel: BaseViewModel {
     self.service = coinsService
     super.init()
     self.loadCoinsMarkets()
-    //self.coins = service.getCoinsMarketsFake()
   }
   
   func loadCoinsMarkets(currency: String = "usd") {
     self.service.getCoinsMarkets(currency: currency)
-    //.receive(on: DispatchQueue.main)
     .sink(receiveCompletion: { completion in
       if case .failure(let error) = completion {
         self.error = error
