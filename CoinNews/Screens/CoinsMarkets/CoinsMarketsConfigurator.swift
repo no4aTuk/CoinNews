@@ -17,7 +17,7 @@ public class CoinsMarketsConfigurator: ModuleConfigurator {
     let listView = CoinsMarketsView(viewModel: viewModel)
       .tabItem {
         Image(systemName: "1.circle")
-        Text("First")
+        Text("Coins")
       }.tag(0)
     
     return listView

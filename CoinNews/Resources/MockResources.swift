@@ -19,6 +19,14 @@ public class MockResources {
     return coinsMarkets.first
   }
   
+  static var newsList: [News] {
+    return getResourceFromFile(name: "news_list") ?? []
+  }
+  
+  static var news: News? {
+    return newsList.first
+  }
+  
   private static func getResourceFromFile<T: Decodable>(name: String, type: String = "json") -> T? {
     let fileUrl = Bundle.main.url(forResource: name, withExtension: type)
     if let url = fileUrl {

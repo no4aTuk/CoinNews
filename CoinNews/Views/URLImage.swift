@@ -14,9 +14,9 @@ struct URLImage: View {
   @ObservedObject var imageLoader: ImageLoader = ImageLoader()
   
   let placeholder: Image
-  let url: String
+  let url: String?
   
-  init(url: String, placeholder: Image = Image("coins_tab")) {
+  init(url: String?, placeholder: Image = Image("coins_tab")) {
     self.placeholder = placeholder
     self.url = url
   }

@@ -8,14 +8,6 @@
 
 import Foundation
 
-extension ROI {
-  enum Keys {
-    static let times = "times"
-    static let currency = "currency"
-    static let percentage = "percentage"
-  }
-}
-
 struct ROI: Codable {
   let times: Double = 0.0
   let currency: String = ""

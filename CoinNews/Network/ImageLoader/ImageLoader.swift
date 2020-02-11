@@ -34,7 +34,8 @@ class ImageLoader : ObservableObject {
     case error
   }
   
-  func load(url: String) {
+  func load(url: String?) {
+    guard let url = url else { return }
     //Prevent load new image until previous is in loading state
     guard Self.loadingImages.contains(url) == false && state != .loaded else {
       print("Warning! image is loading! ", URL(string: url)?.pathComponents.last! ?? "-")

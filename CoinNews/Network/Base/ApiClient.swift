@@ -14,7 +14,11 @@ public class ApiClient {
   public static let shared = ApiClient()
   private init() {}
   
-  private let decoder = JSONDecoder()
+  private let decoder: JSONDecoder = {
+    let decoder = JSONDecoder()
+    decoder.dateDecodingStrategy = .formatted(GeckoDateFormatter())
+    return decoder
+  }()
   private let queue = DispatchQueue(label: "api_queue", qos: .userInteractive, attributes: .concurrent)
   
   public func execute<T: Codable>(urlRequest: URLRequest) -> AnyPublisher<T, ApiError> {

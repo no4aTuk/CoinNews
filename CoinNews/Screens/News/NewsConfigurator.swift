@@ -11,11 +11,11 @@ import SwiftUI
 
 public class NewsConfigurator: ModuleConfigurator {
   func configure() -> some View {
-    let newsViewModel = NewsViewModel()
+    let newsViewModel = NewsViewModel(service: NewsService())
     let newsView = NewsListView(viewModel: newsViewModel)
       .tabItem {
         Image(systemName: "2.circle")
-        Text("Second")
+        Text("News")
     }.tag(1)
     
     return newsView

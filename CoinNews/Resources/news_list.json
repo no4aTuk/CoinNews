@@ -1,0 +1,251 @@
+{
+  "status_updates": [
+    {
+      "description": "ARK Desktop Wallet v2.8 is now available! This update is mandatory. This Wallet update includes support for Core v2.6, MultiSig, MultiPay, Business & Bridgechain registration transactions, IPFS, delegate resignation, Nonce support and much more! Please update. https://blog.ark.io/ark-desktop-wallet-v2-8-0-released-bringing-new-transaction-types-core-v2-6-compatibility-4097be06bf53",
+      "category": "software_release",
+      "created_at": "2020-02-11T14:47:02.040Z",
+      "user": "Travis Walker",
+      "user_title": "Co-Founder/Board Member/CMO",
+      "pin": false,
+      "project": {
+        "type": "Coin",
+        "id": "ark",
+        "name": "Ark",
+        "symbol": "ark",
+        "image": {
+          "thumb": "https://assets.coingecko.com/coins/images/613/thumb/ark.png?1547034308",
+          "small": "https://assets.coingecko.com/coins/images/613/small/ark.png?1547034308",
+          "large": "https://assets.coingecko.com/coins/images/613/large/ark.png?1547034308"
+        }
+      }
+    },
+    {
+      "description": "We have launched our new webpage for #Testimonials: https://www.bitball-btb.com/testimonials\r\nSimply fill up the contact form or email us at support@bitball-btb.com to add yours.\r\n\r\nThis is for everyone who wants to share their experiences with #Bitball #BTB since the launch in 07/18.\r\n\r\n What’s next 🤷‍♂️\r\n 1. 360 review & bulk email (newsletters) by a #Crypto channel.\r\n 2. More exchange Listings\r\n 3. Big Goal/Use case.\r\n\r\nTweet: https://twitter.com/bitball_erc20/status/1227166458142019584",
+      "category": "general",
+      "created_at": "2020-02-11T10:22:37.906Z",
+      "user": "B M",
+      "user_title": "Chief executive officer",
+      "pin": false,
+      "project": {
+        "type": "Coin",
+        "id": "bitball",
+        "name": "Bitball",
+        "symbol": "btb",
+        "image": {
+          "thumb": "https://assets.coingecko.com/coins/images/7039/thumb/btball.PNG?1574133730",
+          "small": "https://assets.coingecko.com/coins/images/7039/small/btball.PNG?1574133730",
+          "large": "https://assets.coingecko.com/coins/images/7039/large/btball.PNG?1574133730"
+        }
+      }
+    },
+    {
+      "description": "👉 A lot of things have changed in the blockchain space over the years, but one thing remains constant: cyberthreat. \r\n\r\n🛡 Reap the benefits of a connected world without fearing unknown security threats. New security indicators are up on our Forum: https://bit.ly/39nFXDD",
+      "category": "general",
+      "created_at": "2020-02-11T08:48:14.177Z",
+      "user": "Ilinca Alexiuc",
+      "user_title": "Growth Manager",
+      "pin": false,
+      "project": {
+        "type": "Coin",
+        "id": "sentinel-protocol",
+        "name": "Sentinel Protocol",
+        "symbol": "upp",
+        "image": {
+          "thumb": "https://assets.coingecko.com/coins/images/3369/thumb/Sentinel_Protocol.jpg?1547700074",
+          "small": "https://assets.coingecko.com/coins/images/3369/small/Sentinel_Protocol.jpg?1547700074",
+          "large": "https://assets.coingecko.com/coins/images/3369/large/Sentinel_Protocol.jpg?1547700074"
+        }
+      }
+    },
+    {
+      "description": "Promotion from Helpico community. \r\n- build and run 1 Helpico coin Masternode;\r\n- let us know by e-mail helpico@helpico.io;\r\n- receive a commemorative T-shirt as a gift.\r\nwww.helpico.io\r\nhttps://twitter.com/Helpico_Coin/status/1227145083486601216 ",
+      "category": "general",
+      "created_at": "2020-02-11T08:20:51.272Z",
+      "user": "Felix Ruzovsky",
+      "user_title": "CCO of Marketing",
+      "pin": false,
+      "project": {
+        "type": "Coin",
+        "id": "helpico",
+        "name": "Helpico",
+        "symbol": "help",
+        "image": {
+          "thumb": "https://assets.coingecko.com/coins/images/6278/thumb/q0EaTkZx_400x400.jpg?1547042318",
+          "small": "https://assets.coingecko.com/coins/images/6278/small/q0EaTkZx_400x400.jpg?1547042318",
+          "large": "https://assets.coingecko.com/coins/images/6278/large/q0EaTkZx_400x400.jpg?1547042318"
+        }
+      }
+    },
+    {
+      "description": "Here's a new update on Symbol testnet: http://bit.ly/symbol-testnet-update\r\n\r\nNOTE: If you have been running a node on ANY previous version it is best if you start from a fresh environment and redeploy your new node from a clean state.\r\n\r\n#symbolblockchain #blockchaintechnology #testnet",
+      "category": "general",
+      "created_at": "2020-02-11T08:17:53.845Z",
+      "user": "NEM Foundation Team",
+      "user_title": "",
+      "pin": false,
+      "project": {
+        "type": "Coin",
+        "id": "nem",
+        "name": "NEM",
+        "symbol": "xem",
+        "image": {
+          "thumb": "https://assets.coingecko.com/coins/images/242/thumb/nem.png?1547034011",
+          "small": "https://assets.coingecko.com/coins/images/242/small/nem.png?1547034011",
+          "large": "https://assets.coingecko.com/coins/images/242/large/nem.png?1547034011"
+        }
+      }
+    },
+    {
+      "description": "Check out last week’s updates and leave a comment in the Qtum x86 Rust repository if you’d like 😀\r\n\r\n https://qtum.org/en/post/development-updates-february-03-09\r\n\r\n- Continuing to port Bitcoin 0.19.0.1 to Qtum\r\n- Preliminary design spec & QIP for Qtum offline staking\r\n- Fix some Python test cases",
+      "category": "general",
+      "created_at": "2020-02-11T07:49:45.131Z",
+      "user": "John Scianna",
+      "user_title": "Marketing Director",
+      "pin": false,
+      "project": {
+        "type": "Coin",
+        "id": "qtum",
+        "name": "Qtum",
+        "symbol": "qtum",
+        "image": {
+          "thumb": "https://assets.coingecko.com/coins/images/684/thumb/qtum.png?1547034438",
+          "small": "https://assets.coingecko.com/coins/images/684/small/qtum.png?1547034438",
+          "large": "https://assets.coingecko.com/coins/images/684/large/qtum.png?1547034438"
+        }
+      }
+    },
+    {
+      "description": "The latest PIVX iOS Mobile wallet v1.1.2 has just been approved and released on the App Store!\r\n\r\nIt now supports the new v7 blocks and protocol version allowing it to sync with the latest 4.x wallet nodes. \r\n\r\nhttps://apps.apple.com/us/app/pivx/id1447549366",
+      "category": "software_release",
+      "created_at": "2020-02-11T00:10:37.020Z",
+      "user": "Jay Kim",
+      "user_title": "Chief Advisor",
+      "pin": false,
+      "project": {
+        "type": "Coin",
+        "id": "pivx",
+        "name": "PIVX",
+        "symbol": "pivx",
+        "image": {
+          "thumb": "https://assets.coingecko.com/coins/images/548/thumb/pivx-logo.png?1547034228",
+          "small": "https://assets.coingecko.com/coins/images/548/small/pivx-logo.png?1547034228",
+          "large": "https://assets.coingecko.com/coins/images/548/large/pivx-logo.png?1547034228"
+        }
+      }
+    },
+    {
+      "description": "Get Free Crypto by Playing the Faucet Game 'Black Monkey'!\r\n\r\nRound 27 of BANANO’s popular faucet game ‘Black Monkey’ is about to start, running 24 hours only! It’s super simple, play the game, earn free $BAN! How much can you get? \r\n\r\nAll details here:\r\nhttps://www.publish0x.com/banano/get-free-crypto-by-playing-the-faucet-game-black-monkey-roun-xmolny?a=QJ0dNjvdLO",
+      "category": "general",
+      "created_at": "2020-02-10T23:51:41.552Z",
+      "user": "bantano",
+      "user_title": "Community Developer",
+      "pin": false,
+      "project": {
+        "type": "Coin",
+        "id": "banano",
+        "name": "Banano",
+        "symbol": "ban",
+        "image": {
+          "thumb": "https://assets.coingecko.com/coins/images/6226/thumb/5WdpYmfA.jpeg?1547042258",
+          "small": "https://assets.coingecko.com/coins/images/6226/small/5WdpYmfA.jpeg?1547042258",
+          "large": "https://assets.coingecko.com/coins/images/6226/large/5WdpYmfA.jpeg?1547042258"
+        }
+      }
+    },
+    {
+      "description": "Greetings users, today we’d love to share our new release for the BCD Pay app, below is a list of improvements and new features included in this update:\r\n- Ethereum support\r\n- 24-word recovery seed phrase support\r\n- UI improvements\r\n- Nexo and Binance Hot wallets\r\nNew version is available at, https://www.bitcoindiamond.org/bcd-pay/  and Google Play; IOS version is under app store review at the moment and will be available soon.\r\n",
+      "category": "general",
+      "created_at": "2020-02-10T22:28:04.003Z",
+      "user": "Igor Soshkin",
+      "user_title": "North America Ambassador ",
+      "pin": false,
+      "project": {
+        "type": "Coin",
+        "id": "bitcoin-diamond",
+        "name": "Bitcoin Diamond",
+        "symbol": "bcd",
+        "image": {
+          "thumb": "https://assets.coingecko.com/coins/images/1254/thumb/bitcoin-diamond.png?1547035280",
+          "small": "https://assets.coingecko.com/coins/images/1254/small/bitcoin-diamond.png?1547035280",
+          "large": "https://assets.coingecko.com/coins/images/1254/large/bitcoin-diamond.png?1547035280"
+        }
+      }
+    },
+    {
+      "description": "New precious metals trading + LuckyBytes returns https://medium.com/@pauljamesmurray/new-precious-metals-trading-luckybytes-returns-the-latest-obyte-email-newsletter-ebe32c8833ac",
+      "category": "general",
+      "created_at": "2020-02-10T19:38:18.121Z",
+      "user": "Paul Murray",
+      "user_title": "Head of Digital Content",
+      "pin": false,
+      "project": {
+        "type": "Coin",
+        "id": "byteball",
+        "name": "Obyte",
+        "symbol": "gbyte",
+        "image": {
+          "thumb": "https://assets.coingecko.com/coins/images/561/thumb/byteball.png?1547564361",
+          "small": "https://assets.coingecko.com/coins/images/561/small/byteball.png?1547564361",
+          "large": "https://assets.coingecko.com/coins/images/561/large/byteball.png?1547564361"
+        }
+      }
+    },
+    {
+      "description": "Beam 2020 Week #6\r\n\r\nAnother busy week for Beam, with the roadmap update from the Beam Foundation, iOS release, and some great things happening in the community. \r\n\r\nhttps://beamprivacy.substack.com/p/beam-2020-week-6",
+      "category": "general",
+      "created_at": "2020-02-10T17:11:43.698Z",
+      "user": "Angus Sullivan",
+      "user_title": "Community Lead",
+      "pin": false,
+      "project": {
+        "type": "Coin",
+        "id": "beam",
+        "name": "BEAM",
+        "symbol": "beam",
+        "image": {
+          "thumb": "https://assets.coingecko.com/coins/images/7339/thumb/BEAM.png?1558013729",
+          "small": "https://assets.coingecko.com/coins/images/7339/small/BEAM.png?1558013729",
+          "large": "https://assets.coingecko.com/coins/images/7339/large/BEAM.png?1558013729"
+        }
+      }
+    },
+    {
+      "description": "Beam Release\r\n\r\nCheck out the latest Beam release for iOS, Double Doppler 4.1. Update now in the appstore. \r\n\r\nRelease notes:\r\nhttps://medium.com/beam-mw/double-doppler-4-1-ios-release-notes-36706cd9da1f\r\n\r\nTeam Beam \r\n\r\n",
+      "category": "general",
+      "created_at": "2020-02-10T12:02:58.288Z",
+      "user": "Angus Sullivan",
+      "user_title": "Community Lead",
+      "pin": false,
+      "project": {
+        "type": "Coin",
+        "id": "beam",
+        "name": "BEAM",
+        "symbol": "beam",
+        "image": {
+          "thumb": "https://assets.coingecko.com/coins/images/7339/thumb/BEAM.png?1558013729",
+          "small": "https://assets.coingecko.com/coins/images/7339/small/BEAM.png?1558013729",
+          "large": "https://assets.coingecko.com/coins/images/7339/large/BEAM.png?1558013729"
+        }
+      }
+    },
+    {
+      "description": "The SpaceChain team has been busy with the GSTC events, CCO Nick does some networking in Scotland. Also, the space node software gets an upgrade! Read them all in this week's weekly report.\r\n\r\nhttps://spacechain.com/spacechain-weekly-report-6-2020-feb-3-to-9/",
+      "category": "general",
+      "created_at": "2020-02-10T11:35:43.070Z",
+      "user": "Nic",
+      "user_title": "Marketing Director",
+      "pin": false,
+      "project": {
+        "type": "Coin",
+        "id": "spacechain",
+        "name": "SpaceChain",
+        "symbol": "spc",
+        "image": {
+          "thumb": "https://assets.coingecko.com/coins/images/2528/thumb/spacechain.png?1547036643",
+          "small": "https://assets.coingecko.com/coins/images/2528/small/spacechain.png?1547036643",
+          "large": "https://assets.coingecko.com/coins/images/2528/large/spacechain.png?1547036643"
+        }
+      }
+    }
+  ]
+}
