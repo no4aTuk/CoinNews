@@ -14,6 +14,8 @@ public class BaseApiService {
     do {
       let urlRequest = try router.asUrlRequest()
       return ApiClient.shared.execute(urlRequest: urlRequest)
+        .receive(on: DispatchQueue.main)
+        .eraseToAnyPublisher()
     } catch {
       return Fail<T, ApiError>(error: ApiError.server(error: error.localizedDescription))
         .eraseToAnyPublisher()

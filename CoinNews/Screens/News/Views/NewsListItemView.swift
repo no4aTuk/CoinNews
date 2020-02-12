@@ -14,20 +14,27 @@ struct NewsListItemView: View {
   var body: some View {
     //var frame: CGRect = .zero
     HStack(alignment: .top) {
-      URLImage(url: self.newsItem.project!.image!.small)
+      URLImage(url: self.newsItem.project?.image?.small)
         .frame(width: 30, height: 30)
       VStack(alignment: .leading) {
-        //Text(newsItem.project!.symbol)
-        //Text(newsItem.user)
-        //Text(newsItem.description!)
-        CNwsTextView(text: self.newsItem.description!)
-          
-//          .background(Rectangle().fill())
-//          .font(.body)
-//          .foregroundColor(.gray)
-        Text(self.newsItem.created_at!.toString())
-      }.frame(width: 100, height: 100, alignment: .center)
+        //Text(newsItem.project?.symbol ?? "*")
+        //Text(newsItem.user ?? "*")
+        Text(newsItem.description)
+          .font(.system(size: 14, weight: .medium, design: Font.Design.rounded))
+          .foregroundColor(Color.gray)
+        Button(action: {
+          if let url = self.newsItem.links.first {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+          }
+        }) {
+          Text(newsItem.links.first?.host ?? "show more")
+          .foregroundColor(Color.blue)
+        }
+        Spacer()
+        Text(self.newsItem.created_at.toString())
+      }
     }
+    .buttonStyle(PlainButtonStyle())
   }
 }
 

@@ -9,6 +9,8 @@
 import Foundation
 import Combine
 
+let geckoDateFormatted = GeckoDateFormatter()
+
 public class ApiClient {
   
   public static let shared = ApiClient()
@@ -16,7 +18,7 @@ public class ApiClient {
   
   private let decoder: JSONDecoder = {
     let decoder = JSONDecoder()
-    decoder.dateDecodingStrategy = .formatted(GeckoDateFormatter())
+    decoder.dateDecodingStrategy = .formatted(geckoDateFormatted)
     return decoder
   }()
   private let queue = DispatchQueue(label: "api_queue", qos: .userInteractive, attributes: .concurrent)
@@ -24,7 +26,7 @@ public class ApiClient {
   public func execute<T: Codable>(urlRequest: URLRequest) -> AnyPublisher<T, ApiError> {
     URLSession.shared.dataTaskPublisher(for: urlRequest)
       .subscribe(on: queue)
-      .receive(on: DispatchQueue.main)
+      //.receive(on: DispatchQueue.main)
       .map { $0.0 }
       .decode(type: T.self, decoder: decoder)
       .mapError { error in

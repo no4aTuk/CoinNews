@@ -12,7 +12,7 @@ import SwiftUI
 public struct CNwsTextView: UIViewRepresentable {
   public typealias UIViewType = UITextView
   
-  var text: String
+  var text: String?
   
   public func makeCoordinator() -> CNwsTextView.Coordinator {
     Coordinator(self)
@@ -20,9 +20,10 @@ public struct CNwsTextView: UIViewRepresentable {
   
   public func makeUIView(context: Context) -> UITextView {
     let textView = UITextView()
-    textView.isScrollEnabled = false
-    textView.isEditable = false
-//    textView.delegate = context.coordinator
+    //textView.isScrollEnabled = false
+    //textView.isEditable = false
+    //textView.delegate = context.coordinator
+    textView.frame = .init(origin: .zero, size: .init(width: 200, height: 100))
     textView.text = text
     return textView
   }
