@@ -21,7 +21,7 @@ public class ApiClient {
     decoder.dateDecodingStrategy = .formatted(geckoDateFormatted)
     return decoder
   }()
-  private let queue = DispatchQueue(label: "api_queue", qos: .userInteractive, attributes: .concurrent)
+  private let queue = DispatchQueue(label: "api_queue", qos: .userInitiated, attributes: .concurrent)
   
   public func execute<T: Codable>(urlRequest: URLRequest) -> AnyPublisher<T, ApiError> {
     URLSession.shared.dataTaskPublisher(for: urlRequest)

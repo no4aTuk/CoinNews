@@ -29,7 +29,6 @@ public enum ParameterEncoding {
       //request.url?.appendPathComponent("?\(queryString)", isDirectory: false)
       let stringUrl = "\((request.url?.absoluteString ?? ""))?\(queryString)"
       request.url = URL(string: stringUrl)
-      let a = 1 + 2
     case .json:
       request.setValue(ContentType.formUrlEncoded.rawValue,
                        forHTTPHeaderField: HttpHeader.contentType.rawValue)
